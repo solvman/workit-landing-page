@@ -1,0 +1,142 @@
+/* Variables */
+:root {
+  --ff-heading: "Fraunces", serif;
+  --ff-body: "Manrope", sans-serif;
+
+  --fw-heading: 600;
+  --fw-body: 400;
+
+  --clr-primary-900: hsl(273, 85%, 13%);
+  --clr-primary-100: hsl(276, 100%, 99%);
+  --clr-accent-400: hsl(150, 100%, 63%);
+  --clr-neutral-700: hsl(271, 12%, 34%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* Styles */
+body {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-body);
+  font-size: 1.125rem;
+  min-width: 375px;
+}
+.heading--lg {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-heading);
+}
+.heading--md {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-heading);
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.btn--primary {
+  background-color: var(--clr-accent-400);
+  border: 2px solid var(--clr-accent-400);
+  padding: 0.8rem 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: var(--clr-primary-900);
+  color: var(--clr-accent-400);
+}
+.btn--secondary {
+  border: none;
+  border-bottom: 3px solid var(--clr-accent-400);
+  background-color: var(--clr-primary-900);
+  color: var(--clr-primary-100);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn--secondary:hover,
+.btn--secondary:focus {
+  color: var(--clr-accent-400);
+}
+.header {
+  background-color: var(--clr-primary-900);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+.title {
+  color: var(--clr-primary-100);
+  background-color: var(--clr-primary-900);
+  text-align: center;
+  border-bottom-left-radius: 60% 35px;
+  border-bottom-right-radius: 10000px 1000px;
+}
+.title__heading {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-heading);
+  font-size: 2.75rem;
+  line-height: 3rem;
+  padding: 2.5rem 1rem;
+}
+.title__curved-bottom {
+  background-color: var(--clr-primary-100);
+  position: relative;
+  overflow: hidden;
+}
+.title__curved-bottom::before {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-primary-900);
+  border-radius: 50%;
+  height: 120%;
+  width: 200%;
+  left: -50%;
+  top: -50%;
+}
+
+.title__img {
+  padding: 2rem 1rem 1rem 2rem;
+}
