@@ -194,3 +194,23 @@ h2 {
   top: -50%;
   left: 0;
 }
+.founder__avatar {
+  margin: 4rem auto 0 auto;
+  height: 281px;
+  width: 281px;
+  position: relative;
+  z-index: -1;
+}
+.call-for-action {
+  margin-top: -3.25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 2rem;
+  background-color: var(--clr-primary-900);
+  color: var(--clr-neutral-100);
+  text-align: center;
+}
+.call-for-action__text {
+  font-size: 0.99rem;
+  margin: 1.25rem 0;
+}
