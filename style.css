@@ -335,3 +335,6 @@ h2 {
     line-height: 1.5rem;
   }
 }
+
+@media (min-width: 1440px) {
+}
