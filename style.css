@@ -195,7 +195,7 @@ h2 {
   border-radius: 50%;
   height: 100%;
   width: 100%;
-  transform: scale(1.5);
+  transform: scale(1);
   top: -50%;
   left: 0;
 }
@@ -364,5 +364,64 @@ h2 {
   .hero__img {
     margin: auto;
     width: 767px;
+  }
+  .key-points > .content {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .key-point {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .key-point__title,
+  .key-point__text {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .key-point__item-2,
+  .key-point__item-3 {
+    width: 100%;
+  }
+  .key-point__text {
+    font-size: 1.1rem;
+  }
+  .founder {
+    position: relative;
+  }
+  .founder__avatar {
+    width: 477px;
+    height: 100%;
+    margin: 4rem auto 0 2rem;
+  }
+
+  .founder__img {
+    bottom: -65px;
+    right: 375px;
+    display: block;
+    position: absolute;
+  }
+
+  .call-for-action {
+    margin: -20rem -2rem 0 auto;
+    width: 730px;
+    height: 413px;
+    padding: 4rem;
+  }
+  .call-for-action__title {
+    font-size: 3.5rem;
+  }
+  .call-for-action__text {
+    margin: 1.5rem 0;
+    line-height: 1.8;
+    font-size: 1.13rem;
+  }
+  .btn--primary {
+    padding: 1rem 1.75rem;
+  }
+  .footer {
+    margin: 6rem auto;
   }
 }
